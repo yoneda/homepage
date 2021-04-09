@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>yoneda's page</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<title>yoneda's page</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-	<div id="container">
-		<header class="header">
-			<img src="./bridge.jpg" width="504px" height="378px" alt="the image of bridge" />
-			<p>
-				Hi, I’m Yoneda. I was born in Kakogawa, Hyogo. Recently,I continue to
-				writing javascript with React.
-			</p>
-		</header>
-		<main class="main">
-			<h2>Project</h2>
-			<ul>
-				<li>
-					<a href="https://diarictron.com" target="__blank">Diarictron</a> -
-					日記を書くことに特化したノートアプリ
-				</li>
-			</ul>
-			<h2>Social links</h2>
-			<ul>
-				<li>
-					<a href="https://twitter.com/yonedaco" target="__blank">Twitter</a>
-				</li>
-				<li>
-					<a href="https://github.com/yoneda" target="__blank">Github</a>
-				</li>
-				<li>
-					<a href="https://instagram.com/yonedaco" target="__blank">Instagram</a>
-				</li>
-				<li>
-					<a href="https://qiita.com/yonedaco" target="__blank">Qiita</a>
-				</li>
-			</ul>
-			<h2>Contact</h2>
-			<p>以下のメールアドレスもしくはTwitterのDMまでご連絡ください</p>
-			<p>yoneda@yoneda.fun</p>
-		</main>
-		<footer class="footer">
-			<span>©2021 yoneda all rights reserved.</span>
-		</footer>
-	</div>
-</body>
-
+	<body>
+		<div id="container">
+			<header class="header">
+				<div class="image-cropper">
+					<img
+						src="./bridge.jpg"
+						width="504px"
+						height="378px"
+						alt="the image of bridge"
+					/>
+				</div>
+				<p>
+					Hi, I’m Yoneda. I was born in Kakogawa, Hyogo. Recently,I
+					continue to writing javascript with React.
+				</p>
+			</header>
+			<main class="main">
+				<h2>Project</h2>
+				<ul>
+					<li>
+						<a href="https://diarictron.com" target="__blank"
+							>Diarictron</a
+						>
+						- 日記を書くことに特化したノートアプリ
+					</li>
+				</ul>
+				<h2>Social links</h2>
+				<ul>
+					<li>
+						<a href="https://twitter.com/yonedaco" target="__blank"
+							>Twitter</a
+						>
+					</li>
+					<li>
+						<a href="https://github.com/yoneda" target="__blank"
+							>Github</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://instagram.com/yonedaco"
+							target="__blank"
+							>Instagram</a
+						>
+					</li>
+					<li>
+						<a href="https://qiita.com/yonedaco" target="__blank"
+							>Qiita</a
+						>
+					</li>
+				</ul>
+				<h2>Contact</h2>
+				<p>以下のメールアドレスもしくはTwitterのDMまでご連絡ください</p>
+				<p>yoneda@yoneda.fun</p>
+			</main>
+			<footer class="footer">
+				<span>©2021 yoneda all rights reserved.</span>
+			</footer>
+		</div>
+	</body>
 </html>
 
 <style>
@@ -59,7 +79,7 @@
 		margin: 0px;
 		box-sizing: border-box;
 
-		background-color: #F5F5F5;
+		background-color: #f5f5f5;
 	}
 
 	#container {
@@ -68,11 +88,21 @@
 		background-color: white;
 	}
 
-	.header {}
+	.image-cropper {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
 
-	.main {}
+	.header {
+	}
 
-	.footer {}
+	.main {
+	}
+
+	.footer {
+	}
 
 	.fab-extended {
 		height: 48px;
