@@ -1,5 +1,5 @@
 $font-stack: "Roboto", sans-serif;
-$container-color: red;
+$container-color: white;
 
 body {
   font-family: $font-stack;
@@ -11,7 +11,7 @@ body {
 }
 
 #container {
-  width: 900px;
+  width: 700px;
   margin: 10px auto;
   background-color: $container-color;
 }
