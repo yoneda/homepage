@@ -8,12 +8,18 @@ $font-stack: "Roboto", sans-serif;
   color: $color;
 }
 
+%flex-column-center {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
 // 2014 Material Design color pallettes
-$indigo-a400: #3D5AFE;
+$indigo-a400: #3d5afe;
 $gray-800: #424242;
 $gray-600: #757575;
-$blue-gray: #ECEFF1;
-$white: #FFFFFF;
+$blue-gray: #eceff1;
+$white: #ffffff;
 
 body {
   background-color: $blue-gray;
@@ -21,10 +27,8 @@ body {
     width: 700px;
     margin: 1rem auto 3em;
     background-color: $white;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
     padding: 2rem;
+    @extend %flex-column-center;
     section {
       width: 540px;
       margin-top: 1rem;
