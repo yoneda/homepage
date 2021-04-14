@@ -4,7 +4,7 @@ web developper yoneda's homepage.
 ```
 // use macOS
 $ brew install sass
-$ sass --watch index.scss index.css
+$ sass --watch style.scss style.css
 $ open index.html
 ```
 ## Primitive Deployment

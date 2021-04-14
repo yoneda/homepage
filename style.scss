@@ -1,0 +1,30 @@
+$font-stack: "Roboto", sans-serif;
+
+body {
+  #container {
+    h2 {
+      font: 700 1.75rem $font-stack;
+      letter-spacing: 0px;
+      color: #424242;
+    }
+    p {
+      font: 400 1rem/0.5rem $font-stack;
+      letter-spacing: -0.4px;
+      color: #424242;
+    }
+    a {
+      font: 400 1rem/0.5rem $font-stack;
+      letter-spacing: -0.4px;
+      color: #3D5AFE;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    ul{
+      li{
+        list-style: none;
+      }
+    }
+  }
+}
