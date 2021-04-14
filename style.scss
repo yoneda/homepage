@@ -1,30 +1,89 @@
 $font-stack: "Roboto", sans-serif;
 
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
+  background-color: #eceff1;
   #container {
+    width: 700px;
+    margin: 1rem auto 3em;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 2rem;
+    section {
+      width: 540px;
+      margin-top: 1rem;
+    }
+    img {
+    }
     h2 {
       font: 700 1.75rem $font-stack;
       letter-spacing: 0px;
       color: #424242;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
     p {
-      font: 400 1rem/0.5rem $font-stack;
+      font: 400 1rem/1.5rem $font-stack;
       letter-spacing: -0.4px;
       color: #424242;
+      text-align: center;
     }
     a {
       font: 400 1rem/0.5rem $font-stack;
       letter-spacing: -0.4px;
-      color: #3D5AFE;
+      color: #3d5afe;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
       }
     }
-    ul{
-      li{
+    ul {
+      li {
         list-style: none;
       }
     }
+  }
+  footer {
+    font: 400 1rem/1.5rem $font-stack;
+    letter-spacing: -0.4px;
+    color: #757575;
+    text-align: center;
   }
 }
